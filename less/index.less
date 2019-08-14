@@ -57,3 +57,102 @@ html, body {
 	height: 100%;
 }
 
+//breakpoints
+@mobileVersion: 500px;
+
+// Font sizes for roots
+@desktopRootFontSize: 100%;
+@mobileRootFontSize: 150%;
+
+// paddings
+@largePadding: 1rem;
+@mediumPadding: 0.5rem;
+
+//mixins
+.display-properties() {
+	display: flex;
+	padding-top: @largePadding;
+}
+
+:root {
+	font-size: @desktopRootFontSize;
+	
+	@media(max-width: @mobileVersion) {
+		font-size: @mobileRootFontSize;
+	}
+}
+
+.resume-container {
+	max-width: 1200px;
+	margin: 0 auto;
+
+	header {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		padding-top: @largePadding;
+		background-color: rgb(240, 240, 240);
+		padding-bottom: @largePadding;
+	}
+
+	.introduction {
+		.display-properties();
+		margin-top: @largePadding;
+		
+	}
+
+	.skills-history {
+		.display-properties();
+		background-color: rgb(25, 50, 90);
+	}
+
+	.contacts {
+		.display-properties();
+		background-color: rgb(25, 50, 90);
+	}
+}
+
+
+
+.navigation {
+	direction: flex;
+	margin-top:@mediumPadding;
+	width: 32%;
+	background-color: rgb(25, 50, 90);
+	padding: 1rem;
+	border-radius: 0.5rem;
+	a {
+	text-decoration: none;
+	color: white;
+	padding: 1rem;
+	}	
+}
+
+.about-me {
+	border-top: 0.05rem solid rgb(105, 220, 255);
+	margin-left: 2rem;
+	
+	h2{
+		background-color: rgb(25, 50, 90);
+		color: white;
+		margin-top: @largePadding;
+		padding: @mediumPadding;
+		width: 20%;
+		text-align: center;
+		border-radius: 0.5rem;
+	}
+
+	p{
+
+	}
+}
+
+
+
+
+
+
+
+
+
+

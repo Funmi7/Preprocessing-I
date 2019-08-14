@@ -134,3 +134,64 @@ html,
 body {
   height: 100%;
 }
+:root {
+  font-size: 100%;
+}
+@media (max-width: 500px) {
+  :root {
+    font-size: 150%;
+  }
+}
+.resume-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.resume-container header {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding-top: 1rem;
+  background-color: #f0f0f0;
+  padding-bottom: 1rem;
+}
+.resume-container .introduction {
+  display: flex;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+.resume-container .skills-history {
+  display: flex;
+  padding-top: 1rem;
+  background-color: #19325a;
+}
+.resume-container .contacts {
+  display: flex;
+  padding-top: 1rem;
+  background-color: #19325a;
+}
+.navigation {
+  direction: flex;
+  margin-top: 0.5rem;
+  width: 32%;
+  background-color: #19325a;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.navigation a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+.about-me {
+  border-top: 0.05rem solid #69dcff;
+  margin-left: 2rem;
+}
+.about-me h2 {
+  background-color: #19325a;
+  color: white;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  width: 20%;
+  text-align: center;
+  border-radius: 0.5rem;
+}
