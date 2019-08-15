@@ -68,6 +68,8 @@ html, body {
 @largePadding: 1rem;
 @mediumPadding: 0.5rem;
 
+@blueColor: #19325a;
+
 //mixins
 .display-properties() {
 	display: flex;
@@ -103,49 +105,137 @@ html, body {
 
 	.skills-history {
 		.display-properties();
-		background-color: rgb(25, 50, 90);
+		background-color: @blueColor;
+		margin-top: @largePadding;
+		color: white;
 	}
 
 	.contacts {
 		.display-properties();
-		background-color: rgb(25, 50, 90);
+		background-color: @blueColor;
+		color: white;
 	}
 }
 
 
 
 .navigation {
-	direction: flex;
 	margin-top:@mediumPadding;
-	width: 32%;
-	background-color: rgb(25, 50, 90);
+	 width: 100%;
+	background-color: @blueColor;
 	padding: 1rem;
 	border-radius: 0.5rem;
+	margin-bottom: 1rem;
+
 	a {
 	text-decoration: none;
 	color: white;
-	padding: 1rem;
+	padding: @largePadding;
 	}	
 }
 
-.about-me {
-	border-top: 0.05rem solid rgb(105, 220, 255);
-	margin-left: 2rem;
+.name {
+	color: @blueColor;
+	h1 {
+		font-size: 2rem;
+	}
+	H3{
+		font-size: 1.8rem;
+		
+	}
 	
-	h2{
-		background-color: rgb(25, 50, 90);
+}
+.about-me {
+	border-top: 0.1rem solid rgb(105, 220, 255);
+	margin-left: 2rem;
+	border-bottom: 0.1rem solid rgb(105, 220, 255);
+	
+	h2 {
+		width: 20%;
+		background-color: @blueColor;
 		color: white;
 		margin-top: @largePadding;
 		padding: @mediumPadding;
-		width: 20%;
+		// width: 20%;
 		text-align: center;
 		border-radius: 0.5rem;
+		font-size: 1.5rem;
 	}
 
-	p{
-
+	p {
+		margin-top: @largePadding;
+		margin-bottom: @mediumPadding;
+		font-size: 1.1rem;
 	}
 }
+
+.skills-content-left {
+	margin-left: @largePadding;
+	width: 50%;
+	h2 {
+		width: 50%;
+		background-color: rgb(98, 171, 255);
+		color: white;
+		padding: @mediumPadding;
+		text-align: center;
+		border-radius: 0.5rem;
+		font-size: 1.5rem;
+	}
+
+	.skills-content {
+		margin-top: @largePadding;
+		border-top: 0.02rem solid rgb(98, 171, 255);
+		border-bottom: 0.02rem solid rgb(98, 171, 255);
+	}
+
+	p {
+		border: 0.02rem solid rgb(98, 171, 255);
+		padding: 0.5rem;
+	}
+
+}
+
+.work-history-right {
+	width: 50%;
+	margin-right: @largePadding;
+}
+
+.work-history-content {
+	margin-left: @largePadding;
+	
+	h3{
+		width: 50%;
+		background-color: rgb(98, 171, 255);
+		color: white;
+		padding: @mediumPadding;
+		text-align: center;
+		border-radius: 0.5rem;
+		font-size: 1.5rem;
+	}
+
+	table {
+		margin-top: @largePadding;
+		font-family: arial, sans-serif;
+		border-collapse: collapse;
+		width: 100%;
+	  }
+
+	td, th {
+		text-align: left;
+		padding: 0.5rem;
+  }
+
+  th {
+	  font-size: 1.2rem;
+  }
+
+  	tr:nth-child(even) {
+		background-color: rgb(98, 171, 255);
+  }
+  
+}
+
+
 
 
 

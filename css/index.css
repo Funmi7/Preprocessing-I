@@ -163,35 +163,109 @@ body {
   display: flex;
   padding-top: 1rem;
   background-color: #19325a;
+  margin-top: 1rem;
+  color: white;
 }
 .resume-container .contacts {
   display: flex;
   padding-top: 1rem;
   background-color: #19325a;
+  color: white;
 }
 .navigation {
-  direction: flex;
   margin-top: 0.5rem;
-  width: 32%;
+  width: 100%;
   background-color: #19325a;
   padding: 1rem;
   border-radius: 0.5rem;
+  margin-bottom: 1rem;
 }
 .navigation a {
   text-decoration: none;
   color: white;
   padding: 1rem;
 }
+.name {
+  color: #19325a;
+}
+.name h1 {
+  font-size: 2rem;
+}
+.name H3 {
+  font-size: 1.8rem;
+}
 .about-me {
-  border-top: 0.05rem solid #69dcff;
+  border-top: 0.1rem solid #69dcff;
   margin-left: 2rem;
+  border-bottom: 0.1rem solid #69dcff;
 }
 .about-me h2 {
+  width: 20%;
   background-color: #19325a;
   color: white;
   margin-top: 1rem;
   padding: 0.5rem;
-  width: 20%;
   text-align: center;
   border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
+.about-me p {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+.skills-content-left {
+  margin-left: 1rem;
+  width: 50%;
+}
+.skills-content-left h2 {
+  width: 50%;
+  background-color: #62abff;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
+.skills-content-left .skills-content {
+  margin-top: 1rem;
+  border-top: 0.02rem solid #62abff;
+  border-bottom: 0.02rem solid #62abff;
+}
+.skills-content-left p {
+  border: 0.02rem solid #62abff;
+  padding: 0.5rem;
+}
+.work-history-right {
+  width: 50%;
+  margin-right: 1rem;
+}
+.work-history-content {
+  margin-left: 1rem;
+}
+.work-history-content h3 {
+  width: 50%;
+  background-color: #62abff;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
+.work-history-content table {
+  margin-top: 1rem;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.work-history-content td,
+.work-history-content th {
+  text-align: left;
+  padding: 0.5rem;
+}
+.work-history-content th {
+  font-size: 1.2rem;
+}
+.work-history-content tr:nth-child(even) {
+  background-color: #62abff;
 }
