@@ -219,13 +219,13 @@ body {
   width: 50%;
 }
 .skills-content-left h2 {
-  width: 50%;
+  width: 30%;
   background-color: #62abff;
   color: white;
   padding: 0.5rem;
   text-align: center;
   border-radius: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 .skills-content-left .skills-content {
   margin-top: 1rem;
@@ -244,13 +244,13 @@ body {
   margin-left: 1rem;
 }
 .work-history-content h3 {
-  width: 50%;
+  width: 30%;
   background-color: #62abff;
   color: white;
   padding: 0.5rem;
   text-align: center;
   border-radius: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 .work-history-content table {
   margin-top: 1rem;
@@ -268,4 +268,63 @@ body {
 }
 .work-history-content tr:nth-child(even) {
   background-color: #62abff;
+}
+.contact-content {
+  margin-left: 1rem;
+  width: 50%;
+}
+.contact-content h3 {
+  width: 30%;
+  background-color: #62abff;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.contact-content form {
+  width: 100%;
+  margin: 1rem;
+}
+.contact-content label {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+}
+.contact-content input {
+  margin: 0.5rem;
+}
+.contact-content textarea {
+  margin: 0.5rem;
+  height: 4rem;
+}
+.contact-info {
+  margin-left: 1rem;
+  width: 50%;
+}
+.contact-info h3 {
+  width: 30%;
+  background-color: #62abff;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.contact-info ul {
+  width: 22%;
+  list-style-type: disc;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.05rem;
+  border-bottom: 0.1rem solid #62abff;
+}
+.contact-info p {
+  margin-top: 1rem;
+}
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
