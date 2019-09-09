@@ -1,1 +1,330 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+:root {
+  font-size: 100%;
+}
+@media (max-width: 500px) {
+  :root {
+    font-size: 150%;
+  }
+}
+.resume-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.resume-container header {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding-top: 1rem;
+  background-color: #f0f0f0;
+  padding-bottom: 1rem;
+}
+.resume-container .introduction {
+  display: flex;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+.resume-container .skills-history {
+  display: flex;
+  padding-top: 1rem;
+  background-color: #19325a;
+  margin-top: 1rem;
+  color: white;
+}
+.resume-container .contacts {
+  display: flex;
+  padding-top: 1rem;
+  background-color: #19325a;
+  color: white;
+}
+.navigation {
+  margin-top: 0.5rem;
+  width: 100%;
+  background-color: #19325a;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+.navigation a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+.name {
+  color: #19325a;
+}
+.name h1 {
+  font-size: 2rem;
+}
+.name H3 {
+  font-size: 1.8rem;
+}
+.about-me {
+  border-top: 0.1rem solid #69dcff;
+  margin-left: 2rem;
+  border-bottom: 0.1rem solid #69dcff;
+}
+.about-me h2 {
+  width: 20%;
+  background-color: #19325a;
+  color: white;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
+.about-me p {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+.skills-content-left {
+  margin-left: 1rem;
+  width: 50%;
+}
+.skills-content-left h2 {
+  width: 30%;
+  background-color: #62abff;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+}
+.skills-content-left .skills-content {
+  margin-top: 1rem;
+  border-top: 0.02rem solid #62abff;
+  border-bottom: 0.02rem solid #62abff;
+}
+.skills-content-left p {
+  border: 0.02rem solid #62abff;
+  padding: 0.5rem;
+}
+.work-history-right {
+  width: 50%;
+  margin-right: 1rem;
+}
+.work-history-content {
+  margin-left: 1rem;
+}
+.work-history-content h3 {
+  width: 30%;
+  background-color: #62abff;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+}
+.work-history-content table {
+  margin-top: 1rem;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.work-history-content td,
+.work-history-content th {
+  text-align: left;
+  padding: 0.5rem;
+}
+.work-history-content th {
+  font-size: 1.2rem;
+}
+.work-history-content tr:nth-child(even) {
+  background-color: #62abff;
+}
+.contact-content {
+  margin-left: 1rem;
+  width: 50%;
+}
+.contact-content h3 {
+  width: 30%;
+  background-color: #62abff;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.contact-content form {
+  width: 100%;
+  margin: 1rem;
+}
+.contact-content label {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+}
+.contact-content input {
+  margin: 0.5rem;
+}
+.contact-content textarea {
+  margin: 0.5rem;
+  height: 4rem;
+}
+.contact-info {
+  margin-left: 1rem;
+  width: 50%;
+}
+.contact-info h3 {
+  width: 30%;
+  background-color: #62abff;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.contact-info ul {
+  width: 22%;
+  list-style-type: disc;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.05rem;
+  border-bottom: 0.1rem solid #62abff;
+}
+.contact-info p {
+  margin-top: 1rem;
+}
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
